@@ -11,6 +11,7 @@ $(function () {
 			data: {
 				name: $('#name').val(),
 				email: $('#email').val(),
+				mobile: $('#mobile').val(),
 				message: $('#comments').val()
 			}
 		}).then(function (res) {
@@ -23,6 +24,7 @@ $(function () {
 				$('#name').val('')
 				$('#email').val('')
 				$('#comments').val('')
+				$('#mobile').val('')
 			}
 		})
 	})
