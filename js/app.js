@@ -122,6 +122,7 @@
     $("html, body").animate({ scrollTop: 0 }, 3000);
     return false;
   });
+  // Scroll to booking
   $(".btn-light").click(function() {
     let val = $(document).width() <= 400 ? 5376 : 2580;
     $("html, body").animate({ scrollTop: val }, 3000);
