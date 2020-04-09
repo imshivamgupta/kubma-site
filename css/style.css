@@ -1207,7 +1207,17 @@ button:not(:disabled) {
 }
 
 .avatar.avatar-ex-sm {
-  max-height: 25px;
+  max-height: 40px;
+}
+@media (hover) {
+  .avatar.avatar-ex-sm {
+    filter: grayscale(1) contrast(0) opacity(0.8);
+    transition: filter, transform 0.2s ease-out;
+  }
+}
+.avatar.avatar-ex-sm:hover {
+  filter: unset;
+  transform: scale(1.2);
 }
 
 .avatar.avatar-md-sm {

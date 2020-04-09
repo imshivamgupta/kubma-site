@@ -15,32 +15,26 @@
  *     03.  Back to top     *
  ===========================*/
 
-!(function($) {
+!(function ($) {
   "use strict";
   // Loader
-  $(window).on("load", function() {
+  $(window).on("load", function () {
     $("#status").fadeOut();
-    $("#preloader")
-      .delay(350)
-      .fadeOut("slow");
-    $("body")
-      .delay(350)
-      .css({
-        overflow: "visible"
-      });
+    $("#preloader").delay(350).fadeOut("slow");
+    $("body").delay(350).css({
+      overflow: "visible",
+    });
   });
 
   // Menu
-  $(".navbar-toggle").on("click", function(event) {
+  $(".navbar-toggle").on("click", function (event) {
     $(this).toggleClass("open");
     $("#navigation").slideToggle(400);
   });
 
-  $(".navigation-menu>li")
-    .slice(-1)
-    .addClass("last-elements");
+  $(".navigation-menu>li").slice(-1).addClass("last-elements");
 
-  $(".menu-arrow,.submenu-arrow").on("click", function(e) {
+  $(".menu-arrow,.submenu-arrow").on("click", function (e) {
     if ($(window).width() < 992) {
       e.preventDefault();
       $(this)
@@ -51,58 +45,34 @@
     }
   });
 
-  $(".navigation-menu a").each(function() {
+  $(".navigation-menu a").each(function () {
     if (this.href == window.location.href) {
-      $(this)
-        .parent()
-        .addClass("active");
-      $(this)
-        .parent()
-        .parent()
-        .parent()
-        .addClass("active");
-      $(this)
-        .parent()
-        .parent()
-        .parent()
-        .parent()
-        .parent()
-        .addClass("active");
+      $(this).parent().addClass("active");
+      $(this).parent().parent().parent().addClass("active");
+      $(this).parent().parent().parent().parent().parent().addClass("active");
     }
   });
 
   // Clickable Menu
-  $(".has-submenu a").click(function() {
+  $(".has-submenu a").click(function () {
     if (window.innerWidth < 992) {
-      if (
-        $(this)
-          .parent()
-          .hasClass("open")
-      ) {
-        $(this)
-          .siblings(".submenu")
-          .removeClass("open");
-        $(this)
-          .parent()
-          .removeClass("open");
+      if ($(this).parent().hasClass("open")) {
+        $(this).siblings(".submenu").removeClass("open");
+        $(this).parent().removeClass("open");
       } else {
-        $(this)
-          .siblings(".submenu")
-          .addClass("open");
-        $(this)
-          .parent()
-          .addClass("open");
+        $(this).siblings(".submenu").addClass("open");
+        $(this).parent().addClass("open");
       }
     }
   });
 
-  $(".mouse-down").on("click", function(event) {
+  $(".mouse-down").on("click", function (event) {
     var $anchor = $(this);
     $("html, body")
       .stop()
       .animate(
         {
-          scrollTop: $($anchor.attr("href")).offset().top - 0
+          scrollTop: $($anchor.attr("href")).offset().top - 0,
         },
         1500,
         "easeInOutExpo"
@@ -111,30 +81,30 @@
   });
 
   // Back to top
-  $(window).scroll(function() {
+  $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
       $(".back-to-top").fadeIn();
     } else {
       $(".back-to-top").fadeOut();
     }
   });
-  $(".back-to-top").click(function() {
+  $(".back-to-top").click(function () {
     $("html, body").animate({ scrollTop: 0 }, 3000);
     return false;
   });
   // Scroll to booking
-  $(".btn-light").click(function() {
+  $(".btn-light").click(function () {
     let val = $(document).width() <= 400 ? 5376 : 2580;
     $("html, body").animate({ scrollTop: val }, 3000);
     return false;
   });
 
   //Tooltip
-  $(function() {
+  $(function () {
     $('[data-toggle="tooltip"]').tooltip();
   });
   //Popover
-  $(function() {
+  $(function () {
     $('[data-toggle="popover"]').popover();
   });
 })(jQuery);
