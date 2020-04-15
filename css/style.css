@@ -32,6 +32,9 @@
   background-color: #2f55d4 !important;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 .text-primary {
   color: #2f55d4 !important;
 }
@@ -1209,6 +1212,7 @@ button:not(:disabled) {
 .avatar.avatar-ex-sm {
   max-height: 40px;
 }
+/* Detects Hover Supported Devices */
 @media (hover) {
   .avatar.avatar-ex-sm {
     filter: grayscale(1) contrast(0) opacity(0.8);
