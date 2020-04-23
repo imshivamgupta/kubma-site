@@ -1,4 +1,4 @@
-API = 'https://kubma.com/api/v1'
+API = "https://kubma.com/api/v1";
 $(function () {
   $("#contact-form").on("submit", function (event) {
     event.preventDefault();
