@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 API = "https://kubma.com";
+=======
+API = 'https://kubma.com/api/v1'
+>>>>>>> 46412c3d2d46471fb6bbd4754e3ce99ec4dba3dc
 $(function () {
   $("#contact-form").on("submit", function (event) {
     event.preventDefault();
