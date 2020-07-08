@@ -117,3 +117,9 @@
 
 // For sorting team section
 //let team = ["arvind", "ashutosh", "devansh", "ravi", "rohan", "rupesh", "sanjiv", "shivam", "shivangee", "swati", "vaibhav", "vivek"]
+
+// ParticleJS
+/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+particlesJS.load('particle', 'images/particles.json', function () {
+  console.log('callback - particles.js config loaded')
+})
