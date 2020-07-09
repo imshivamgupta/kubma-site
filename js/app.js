@@ -113,6 +113,10 @@
     animateOut: 'fadeOut',
     items: 1,
   })
+
+  $('li.bg-slider').css({
+    height: `${document.documentElement.clientHeight}px`,
+  })
 })(jQuery)
 
 // For sorting team section
@@ -120,6 +124,4 @@
 
 // ParticleJS
 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-particlesJS.load('particle', 'images/particles.json', function () {
-  console.log('callback - particles.js config loaded')
-})
+particlesJS.load('particle', 'images/particles.json')

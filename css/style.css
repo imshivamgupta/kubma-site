@@ -3960,12 +3960,13 @@ p {
 .title-heading .heading {
   text-transform: capitalize;
   font-family: 'Oswald', sans-serif;
-  font-size: 180px;
+  font-size: 160px;
   font-weight: 600;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  margin-top: -4rem;
 }
 
 @media (max-width: 768px) {
@@ -3976,9 +3977,25 @@ p {
 
 .title-heading .para-desc {
   font-family: 'khula', sans-serif;
-  font-size: 20px;
+  font-size: 27px;
   font-weight: 400;
+  text-align: center;
+  width: 100%;
   max-width: 100%;
+  margin: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+@media (max-width: 778px) {
+  .title-heading .para-desc {
+    font-size: 22px;
+    white-space: normal;
+    animation: normal;
+  }
 }
 
 .go-down {
@@ -3989,10 +4006,33 @@ p {
   transform: translate(-50%);
   z-index: 10;
 }
+
 #topnav .buy-button {
   padding: 0;
 }
 
 body::-webkit-scrollbar {
   width: 0px;
+}
+
+/* Animation */
+.anim-typewriter {
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
 }
