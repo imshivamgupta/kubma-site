@@ -4036,3 +4036,17 @@ body::-webkit-scrollbar {
     border-right-color: transparent;
   }
 }
+
+/* Trusted By Section Customization :: Shivam Gupta */
+@media (max-width: 556px) {
+  section.trusted-by div.trusted-by__clients img {
+    max-width: 100%;
+  }
+  section.trusted-by div.trusted-by__clients:nth-child(2) img {
+    width: 180px !important;
+  }
+  section.trusted-by div.trusted-by__clients:nth-child(6) img {
+    width: 80% !important;
+    height: unset;
+  }
+}
