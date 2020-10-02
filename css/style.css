@@ -4039,9 +4039,6 @@ body::-webkit-scrollbar {
 
 /* Trusted By Section Customization :: Shivam Gupta */
 @media (max-width: 556px) {
-  section.trusted-by div.trusted-by__clients img {
-    max-width: 100%;
-  }
   section.trusted-by div.trusted-by__clients:nth-child(2) img {
     width: 180px !important;
   }
@@ -4049,4 +4046,8 @@ body::-webkit-scrollbar {
     width: 80% !important;
     height: unset;
   }
+}
+section.trusted-by div.trusted-by__clients img {
+  max-width: 100%;
+  object-fit: contain;
 }
