@@ -124,4 +124,4 @@
 
 // ParticleJS
 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-particlesJS.load('particle', 'images/particles.json')
+// particlesJS.load('particle', 'images/particles.json')
