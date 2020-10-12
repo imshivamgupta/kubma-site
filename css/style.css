@@ -4036,3 +4036,79 @@ section.trusted-by div.trusted-by__clients img {
   background: unset !important;
   user-select: none;
 }
+
+/* .pulsing:before {
+  animation: pulsing 0.2s linear infinite;
+}
+.pulsing:after {
+  animation: pulsing1 0.2s linear infinite;
+} */
+
+@media only screen and (max-width: 576px) {
+  .pulsing {
+    border: 2px solid white;
+    border-radius: 50px;
+  }
+
+  .pulsing::before,
+  .pulsing::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: inherit;
+    top: 0;
+    left: 0;
+    z-index: -100;
+    border-radius: inherit;
+    animation: pulsing 2.5s linear infinite;
+  }
+
+  .pulsing::after {
+    animation: pulsing1 2.5s linear infinite;
+  }
+}
+
+@keyframes pulsing {
+  0% {
+    opacity: 1;
+    transform: scaleY(1) scaleX(1);
+  }
+  20% {
+    opacity: 0.5;
+  }
+  70% {
+    opacity: 0.2;
+    transform: scaleY(1.8) scaleX(1.4);
+    background: white;
+  }
+  80% {
+    opacity: 0;
+    transform: scaleY(1.8) scaleX(1.4);
+  }
+  90% {
+    opacity: 0;
+    transform: scaleY(1) scaleX(1);
+  }
+}
+@keyframes pulsing1 {
+  0% {
+    opacity: 1;
+    transform: scaleY(1) scaleX(1);
+  }
+  20% {
+    opacity: 0.5;
+  }
+  70% {
+    opacity: 0.2;
+    transform: scaleY(1.3) scaleX(1.15);
+  }
+  80% {
+    opacity: 0;
+    transform: scaleY(1.3) scaleX(1.15);
+  }
+  90% {
+    opacity: 0;
+    transform: scaleY(1) scaleX(1);
+  }
+}

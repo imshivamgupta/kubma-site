@@ -191,11 +191,11 @@ function update() {
     // distortion
     camera.position.copy( camera.target ).negate();
     */
-  watchCounter++
-  if (watchCounter > 100) {
-    watchCounter = 0
-    material.color.setHex(getRandomColor())
-  }
+  // watchCounter++
+  // if (watchCounter > 100) {
+  //   watchCounter = 0
+  //   material.color.setHex(getRandomColor())
+  // }
   renderer.render(scene, camera)
 }
 var watchCounter = 0
