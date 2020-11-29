@@ -1,141 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8" />
-        <title>Kubma - Virtual reality tech that simplifies life</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description"
-            content="We enable businesses to give a guided, detailed & online walk-throughs of their place to customers" />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700family=khula:wght@400;600&display=swap"
-            rel="stylesheet">
-        <!-- favicon -->
-        <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
-        <link rel="alternate icon" href="images/favicon.ico" />
-        <!-- Bootstrap -->
-        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <!-- Icons -->
-        <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
-        <!-- FLEXSLIDER -->
-        <link href="css/flexslider.css" rel="stylesheet" type="text/css" />
-        <!-- Magnific -->
-        <link href="css/magnific-popup.css" rel="stylesheet" type="text/css" />
-        <!-- Slider -->
-        <link rel="stylesheet" href="css/owl.carousel.min.css" />
-        <link rel="stylesheet" href="css/owl.theme.default.min.css" />
-        <!-- Main Css -->
-        <link href="css/style.css?v=0.1" rel="stylesheet" type="text/css" />
+<head>
+  <meta charset="utf-8" />
+  <title>Kubma - Virtual reality tech that simplifies life</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="We enable businesses to give a guided, detailed & online walk-throughs of their place to customers" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700family=khula:wght@400;600&display=swap"
+    rel="stylesheet">
+  <!-- favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  <link rel="alternate icon" href="images/favicon.ico" />
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <!-- Icons -->
+  <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+  <!-- FLEXSLIDER -->
+  <link href="css/flexslider.css" rel="stylesheet" type="text/css" />
+  <!-- Magnific -->
+  <link href="css/magnific-popup.css" rel="stylesheet" type="text/css" />
+  <!-- Slider -->
+  <link rel="stylesheet" href="css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+  <!-- Main Css -->
+  <link href="css/style.css?v=0.1" rel="stylesheet" type="text/css" />
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168944767-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168944767-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag('js', new Date());
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
 
-            gtag('config', 'UA-168944767-1');
-        </script>
+    gtag('config', 'UA-168944767-1');
+  </script>
 
-    </head>
+</head>
 
-    <body>
-        <!-- Loader -->
-        <div id="preloader">
-            <div id="status">
-                <div class="spinner">
-                    <div class="double-bounce1"></div>
-                    <div class="double-bounce2"></div>
-                </div>
+<body>
+  <!-- Loader -->
+  <div id="preloader">
+    <div id="status">
+      <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+      </div>
+    </div>
+  </div>
+  <!-- Loader -->
+
+  <!-- Navbar STart -->
+  <header id="topnav" class="defaultscroll" style="position: absolute;">
+    <div class="container">
+      <!-- Logo container-->
+
+      <div class="buy-button">
+        <a href="#book-a-demo" class="btn btn-link text-white">Book a demo</a>
+        <a href="//kubma.com/app/login" class="btn btn-link text-white p-0">Login</a>
+      </div>
+
+
+      <!--end login button-->
+      <!-- End Logo container-->
+
+    </div>
+    <!--end container-->
+  </header>
+  <!--end header-->
+  <!-- Navbar End -->
+
+  <!-- Hero Start -->
+  <canvas id="scene" class="reveal-scene"></canvas>
+
+  <section class="main-slider" id="particle">
+    <ul class="slides">
+      <li class="bg-slider bg-animation-left d-flex align-items-center"
+        style="background-color:rgb(41, 37, 98); width: 100%;">
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-lg-12 col-md-12">
+              <div class="title-heading mt-4 text-white text-center d-none" style="z-index: 1;" id="mainText">
+                <h1 class="heading mb-3">
+                  kubma
+                </h1>
+                <p class="para-desc anim-typewriter">
+                  World’s first technology for collaborative virtual explorations.
+                </p>
+              </div>
             </div>
+          </div>
+
+          <a href="#scrolled" class="btn btn-link text-white go-down pulsing">
+            Explore<i class="mdi mdi-arrow-down"></i></a>
+      </li>
+    </ul>
+  </section>
+  <!--end section-->
+  <!-- Hero End -->
+
+  <!-- Services Start -->
+  <section class="section" id="scrolled">
+    <div class="container pb-lg-4 mb-md-5 mb-4">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <div class="section-title mb-4 pb-2">
+            <h4 class="title mb-4">
+              Conduct Interactive Online Inspections
+            </h4>
+          </div>
         </div>
-        <!-- Loader -->
+        <!--end col-->
+      </div>
+      <!--end row-->
 
-        <!-- Navbar STart -->
-        <header id="topnav" class="defaultscroll" style="position: absolute;">
-            <div class="container">
-                <!-- Logo container-->
-
-                <div class="buy-button">
-                    <a href="#book-a-demo" class="btn btn-link text-white">Book a demo</a>
-                    <a href="//kubma.com/app/login" class="btn btn-link text-white p-0">Login</a>
-                </div>
-
-
-                <!--end login button-->
-                <!-- End Logo container-->
-
+      <div class="row">
+        <div class="col-md-4 col-12 mt-5">
+          <div class="features text-center">
+            <div class="image position-relative d-inline-block">
+              <img src="images/icon/relationship 1.svg" class="avatar avatar-small" alt="" />
             </div>
-            <!--end container-->
-        </header>
-        <!--end header-->
-        <!-- Navbar End -->
 
-        <!-- Hero Start -->
-        <section class="main-slider" id="particle">
-            <ul class="slides">
-                <li class="bg-slider bg-animation-left d-flex align-items-center"
-                    style="background-color:rgb(41, 37, 98); width: 100%;">
-                    <div class="container">
-                        <div class="row align-items-center justify-content-center">
-                            <div class="col-lg-12 col-md-12">
-                                <div class="title-heading mt-4 text-white text-center" style="z-index: 1;" id="mainText">
-                                    <h1 class="heading mb-3">
-                                        kubma
-                                    </h1>
-                                    <p class="para-desc anim-typewriter">
-                                        World’s first technology for collaborative virtual explorations.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+            <div class="content mt-4">
+              <h4 class="title-2">Co-browsable Tours</h4>
+              <p class="text-muted mb-0">
+                Your leasing team can give detailed & guided walk-throughs of the project to customers
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--end col-->
 
-                        <a href="#scrolled" class="btn btn-link text-white go-down pulsing">
-                             Explore<i
-                                class="mdi mdi-arrow-down"></i></a>
-                </li>
-            </ul>
-        </section>
-        <!--end section-->
-        <!-- Hero End -->
-
-        <!-- Services Start -->
-        <section class="section" id="scrolled">
-            <div class="container pb-lg-4 mb-md-5 mb-4">
-                <div class="row justify-content-center">
-                    <div class="col-12 text-center">
-                        <div class="section-title mb-4 pb-2">
-                            <h4 class="title mb-4">
-                                Conduct Interactive Online Inspections
-                            </h4>
-                        </div>
-                    </div>
-                    <!--end col-->
-                </div>
-                <!--end row-->
-
-                <div class="row">
-                    <div class="col-md-4 col-12 mt-5">
-                        <div class="features text-center">
-                            <div class="image position-relative d-inline-block">
-                                <img src="images/icon/relationship 1.svg" class="avatar avatar-small" alt="" />
-                            </div>
-
-                            <div class="content mt-4">
-                                <h4 class="title-2">Co-browsable Tours</h4>
-                                <p class="text-muted mb-0">
-                                    Your leasing team can give detailed & guided walk-throughs of the project to
-                                    customers
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--end col-->
-
-                    <!-- <div class="col-md-4 col-12 mt-5">
+        <!-- <div class="col-md-4 col-12 mt-5">
                     <div class="features text-center">
                         <div class="image position-relative d-inline-block">
                             <img src="images/icon/robot 1.svg" class="avatar avatar-small" alt="" />
@@ -150,42 +149,41 @@
                         </div>
                     </div>
                 </div> -->
-                    <!--end col-->
+        <!--end col-->
 
-                    <div class="col-md-4 col-12 mt-5">
-                        <div class="features text-center">
-                            <div class="image position-relative d-inline-block">
-                                <img src="images/icon/promotion 1.svg" class="avatar avatar-small" alt="" />
-                            </div>
+        <div class="col-md-4 col-12 mt-5">
+          <div class="features text-center">
+            <div class="image position-relative d-inline-block">
+              <img src="images/icon/promotion 1.svg" class="avatar avatar-small" alt="" />
+            </div>
 
-                            <div class="content mt-4">
-                                <h4 class="title-2">Increase Reach</h4>
-                                <p class="text-muted mb-0">
-                                    10x more customers are now able to explore & evaluate your project through online
-                                    inspections.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--end col-->
+            <div class="content mt-4">
+              <h4 class="title-2">Increase Reach</h4>
+              <p class="text-muted mb-0">
+                10x more customers are now able to explore & evaluate your project through online inspections.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--end col-->
 
-                    <div class="col-md-4 col-12 mt-5">
-                        <div class="features text-center">
-                            <div class="image position-relative d-inline-block">
-                                <img src="images/icon/profit.svg" class="avatar avatar-small" alt="" />
-                            </div>
+        <div class="col-md-4 col-12 mt-5">
+          <div class="features text-center">
+            <div class="image position-relative d-inline-block">
+              <img src="images/icon/profit.svg" class="avatar avatar-small" alt="" />
+            </div>
 
-                            <div class="content mt-4">
-                                <h4 class="title-2">Increase Efficiency</h4>
-                                <p class="text-muted mb-0">
-                                    Online inspections help save time & energy for tenants, leasing team and landlords.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--end col-->
+            <div class="content mt-4">
+              <h4 class="title-2">Increase Efficiency</h4>
+              <p class="text-muted mb-0">
+                Online inspections help save time & energy for tenants, leasing team and landlords.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--end col-->
 
-                    <!-- <div class="col-md-4 col-12 mt-5">
+        <!-- <div class="col-md-4 col-12 mt-5">
                     <div class="features text-center">
                         <div class="image position-relative d-inline-block">
                             <img src="images/icon/analysis 1.svg" class="avatar avatar-small" alt="" />
@@ -199,9 +197,9 @@
                         </div>
                     </div>
                 </div> -->
-                    <!--end col-->
+        <!--end col-->
 
-                    <!-- <div class="col-md-4 col-12 mt-5">
+        <!-- <div class="col-md-4 col-12 mt-5">
                     <div class="features text-center">
                         <div class="image position-relative d-inline-block">
                             <img src="images/icon/pop-up 1.svg" class="avatar avatar-small" alt="" />
@@ -215,293 +213,279 @@
                         </div>
                     </div>
                 </div> -->
-                    <!--end col-->
-                </div>
-            </div>
-            <!--end container-->
-        </section>
-        <!--end section-->
+        <!--end col-->
+      </div>
+    </div>
+    <!--end container-->
+  </section>
+  <!--end section-->
 
-        <!-- Partners start -->
-        <section class="pt-5 pb-5 border-bottom border-top trusted-by">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12 text-center">
-                        <div class="section-title mb-4 pb-2">
-                            <h4 class="title">Trusted By</h4>
-                        </div>
-                    </div>
+  <!-- Partners start -->
+  <section class="pt-5 pb-5 border-bottom border-top trusted-by">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <div class="section-title mb-4 pb-2">
+            <h4 class="title">Trusted By</h4>
+          </div>
+        </div>
 
-                    <div
-                        class="col-lg-2 col-md-2 col-12 my-3 text-center d-flex align-items-center justify-content-center trusted-by__clients">
-                        <a href="#" target="_blank" rel="noopener noreferrer">
-                            <img src="images/client/wave-logo.png" class="avatar avatar-small" alt=""
-                                style="width: 100%;height: auto;" />
-                        </a>
-                    </div>
-                    <div
-                        class="col-lg-2 col-md-2 col-6 my-3 text-center d-flex align-items-center justify-content-center trusted-by__clients">
-                        <a href="#" target="_blank" rel="noopener noreferrer">
-                            <img src="images/client/savills-logo.svg" class="avatar avatar-small" alt=""
-                                style="width: auto;" />
-                        </a>
-                    </div>
-                    <div
-                        class="col-lg-2 col-md-2 col-6 my-3 text-center d-flex align-items-center justify-content-center trusted-by__clients">
-                        <a href="#" target="_blank" rel="noopener noreferrer">
-                            <img src="images/client/brookfield-logo.jpg" class="avatar avatar-small" alt=""
-                                style="width: auto;" />
-                        </a>
-                    </div>
-                    <div
-                        class="col-lg-2 col-md-2 col-6 my-3 text-center d-flex align-items-center justify-content-center trusted-by__clients">
-                        <a href="#" target="_blank" rel="noopener noreferrer">
-                            <img src="images/client/myhq-logo.jpg" class="avatar avatar-small" alt=""
-                                style="width: auto;" />
-                        </a>
-                    </div>
-                    <div
-                        class="col-lg-2 col-md-2 col-6 my-3 text-center d-flex align-items-center justify-content-center trusted-by__clients">
-                        <a href="#" target="_blank" rel="noopener noreferrer">
-                            <img src="images/client/max-logo.png" class="avatar avatar-small" alt=""
-                                style="width: auto;" />
-                        </a>
-                    </div>
-                    <!-- <div class="col-lg-2 col-md-2 col-12 text-center d-flex align-items-center justify-content-center">
+        <div
+          class="col-lg-2 col-md-2 col-12 my-3 text-center d-flex align-items-center justify-content-center trusted-by__clients">
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <img src="images/client/wave-logo.png" class="avatar avatar-small" alt=""
+              style="width: 100%;height: auto;" />
+          </a>
+        </div>
+        <div
+          class="col-lg-2 col-md-2 col-6 my-3 text-center d-flex align-items-center justify-content-center trusted-by__clients">
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <img src="images/client/savills-logo.svg" class="avatar avatar-small" alt="" style="width: auto;" />
+          </a>
+        </div>
+        <div
+          class="col-lg-2 col-md-2 col-6 my-3 text-center d-flex align-items-center justify-content-center trusted-by__clients">
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <img src="images/client/brookfield-logo.jpg" class="avatar avatar-small" alt="" style="width: auto;" />
+          </a>
+        </div>
+        <div
+          class="col-lg-2 col-md-2 col-6 my-3 text-center d-flex align-items-center justify-content-center trusted-by__clients">
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <img src="images/client/myhq-logo.jpg" class="avatar avatar-small" alt="" style="width: auto;" />
+          </a>
+        </div>
+        <div
+          class="col-lg-2 col-md-2 col-6 my-3 text-center d-flex align-items-center justify-content-center trusted-by__clients">
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <img src="images/client/max-logo.png" class="avatar avatar-small" alt="" style="width: auto;" />
+          </a>
+        </div>
+        <!-- <div class="col-lg-2 col-md-2 col-12 text-center d-flex align-items-center justify-content-center">
                     <a href="#" target="_blank" rel="noopener noreferrer">
                         <img src="images/client/dextrus-logo.png" class="avatar avatar-small" alt=""
                             style="width: auto;" />
                     </a>
                 </div> -->
-                </div>
+      </div>
+    </div>
+  </section>
+  <!--end section-->
+  <!-- Partners End -->
+
+  <!-- Team Start -->
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <div class="section-title mb-4 pb-2">
+            <h4 class="title mb-4">Our Leadership Team</h4>
+          </div>
+        </div>
+        <!--end col-->
+      </div>
+      <!--end row-->
+
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="team text-center">
+            <div class="position-relative">
+              <img src="images/client/arvind.jpg" class="img-fluid avatar avatar-ex-large rounded-pill shadow" alt="" />
+              <ul class="list-unstyled social-icon team-icon mb-0 mt-4">
+                <li class="list-inline-item">
+                  <a target="_blank" href="https://www.linkedin.com/in/arvind-jha-6a3512/" class="rounded"><i
+                      class="mdi mdi-linkedin" title="Linkedin"></i></a>
+                </li>
+              </ul>
             </div>
-        </section>
-        <!--end section-->
-        <!-- Partners End -->
+            <div class="content pt-3 pb-3">
+              <h5 class="mb-0">
+                <a target="_blank" href="https://www.linkedin.com/in/arvind-jha-6a3512/" class="name text-dark">Arvind
+                  Jha</a>
+              </h5>
+              <small class="designation text-muted">Advisor</small>
+            </div>
+          </div>
+        </div>
+        <!--end col-->
 
-        <!-- Team Start -->
-        <section class="section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <div class="section-title mb-4 pb-2">
-                            <h4 class="title mb-4">Our Leadership Team</h4>
-                        </div>
-                    </div>
-                    <!--end col-->
-                </div>
-                <!--end row-->
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="team text-center">
+            <div class="position-relative">
+              <img src="images/client/ashu.png" class="img-fluid avatar avatar-ex-large rounded-pill shadow" alt="" />
+              <ul class="list-unstyled social-icon team-icon mb-0 mt-4">
+                <li class="list-inline-item">
+                  <a target="_blank" href="https://www.linkedin.com/in/ashutosh-tripathi-b73884bb/" class="rounded"><i
+                      class="mdi mdi-linkedin" title="linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="content pt-3 pb-3">
+              <h5 class="mb-0">
+                <a target="_blank" href="https://www.linkedin.com/in/ashutosh-tripathi-b73884bb/"
+                  class="name text-dark">Ashutosh Tripathi</a>
+              </h5>
+              <small class="designation text-muted">Lead Developer</small>
+            </div>
+          </div>
+        </div>
+        <!--end col-->
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="team text-center">
+            <div class="position-relative">
+              <img src="images/client/ranjit.jpg" class="img-fluid avatar avatar-ex-large rounded-pill shadow" alt="" />
+              <ul class="list-unstyled social-icon team-icon mb-0 mt-4">
+                <li class="list-inline-item">
+                  <a target="_blank" href="https://www.linkedin.com/in/ranjit-singh-67016470/" class="rounded"><i
+                      class="mdi mdi-linkedin" title="linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="content pt-3 pb-3">
+              <h5 class="mb-0">
+                <a target="_blank" href="https://www.linkedin.com/in/ranjit-singh-67016470/"
+                  class="name text-dark">Ranjit Singh</a>
+              </h5>
+              <small class="designation text-muted">Advisor</small>
+            </div>
+          </div>
+        </div>
+        <!--end col-->
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="team text-center">
+            <div class="position-relative">
+              <img src="images/client/ravi.png" class="img-fluid avatar avatar-ex-large rounded-pill shadow" alt="" />
+              <ul class="list-unstyled social-icon team-icon mb-0 mt-4">
+                <li class="list-inline-item">
+                  <a target="_blank" href="https://www.linkedin.com/in/ravi-ahlawat-a9b7b8147/" class="rounded"><i
+                      class="mdi mdi-linkedin" title="linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="content pt-3 pb-3">
+              <h5 class="mb-0">
+                <a target="_blank" href="https://www.linkedin.com/in/ravi-ahlawat-a9b7b8147/"
+                  class="name text-dark">Ravi Ahlawat</a>
+              </h5>
+              <small class="designation text-muted">Business Development</small>
+            </div>
+          </div>
+        </div>
+        <!--end col-->
 
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
-                        <div class="team text-center">
-                            <div class="position-relative">
-                                <img src="images/client/arvind.jpg"
-                                    class="img-fluid avatar avatar-ex-large rounded-pill shadow" alt="" />
-                                <ul class="list-unstyled social-icon team-icon mb-0 mt-4">
-                                    <li class="list-inline-item">
-                                        <a target="_blank" href="https://www.linkedin.com/in/arvind-jha-6a3512/"
-                                            class="rounded"><i class="mdi mdi-linkedin" title="Linkedin"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="content pt-3 pb-3">
-                                <h5 class="mb-0">
-                                    <a target="_blank" href="https://www.linkedin.com/in/arvind-jha-6a3512/"
-                                        class="name text-dark">Arvind
-                                        Jha</a>
-                                </h5>
-                                <small class="designation text-muted">Advisor</small>
-                            </div>
-                        </div>
-                    </div>
-                    <!--end col-->
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="team text-center">
+            <div class="position-relative">
+              <img src="images/client/rohan.jpg?v1" class="img-fluid avatar avatar-ex-large rounded-pill shadow"
+                alt="" />
+              <ul class="list-unstyled social-icon team-icon mb-0 mt-4">
+                <li class="list-inline-item">
+                  <a target="_blank" href="https://www.linkedin.com/in/rohan-mital-7a05b8145/" class="rounded"><i
+                      class="mdi mdi-linkedin" title="linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="content pt-3 pb-3">
+              <h5 class="mb-0">
+                <a target="_blank" href="https://www.linkedin.com/in/rohan-mital-7a05b8145/"
+                  class="name text-dark">Rohan Mital</a>
+              </h5>
+              <small class="designation text-muted">CEO</small>
+            </div>
+          </div>
+        </div>
+        <!--end col-->
 
-                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
-                        <div class="team text-center">
-                            <div class="position-relative">
-                                <img src="images/client/ashu.png"
-                                    class="img-fluid avatar avatar-ex-large rounded-pill shadow" alt="" />
-                                <ul class="list-unstyled social-icon team-icon mb-0 mt-4">
-                                    <li class="list-inline-item">
-                                        <a target="_blank"
-                                            href="https://www.linkedin.com/in/ashutosh-tripathi-b73884bb/"
-                                            class="rounded"><i class="mdi mdi-linkedin" title="linkedin"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="content pt-3 pb-3">
-                                <h5 class="mb-0">
-                                    <a target="_blank" href="https://www.linkedin.com/in/ashutosh-tripathi-b73884bb/"
-                                        class="name text-dark">Ashutosh Tripathi</a>
-                                </h5>
-                                <small class="designation text-muted">Lead Developer</small>
-                            </div>
-                        </div>
-                    </div>
-                    <!--end col-->
-                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
-                        <div class="team text-center">
-                            <div class="position-relative">
-                                <img src="images/client/ranjit.jpg"
-                                    class="img-fluid avatar avatar-ex-large rounded-pill shadow" alt="" />
-                                <ul class="list-unstyled social-icon team-icon mb-0 mt-4">
-                                    <li class="list-inline-item">
-                                        <a target="_blank" href="https://www.linkedin.com/in/ranjit-singh-67016470/"
-                                            class="rounded"><i class="mdi mdi-linkedin" title="linkedin"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="content pt-3 pb-3">
-                                <h5 class="mb-0">
-                                    <a target="_blank" href="https://www.linkedin.com/in/ranjit-singh-67016470/"
-                                        class="name text-dark">Ranjit Singh</a>
-                                </h5>
-                                <small class="designation text-muted">Advisor</small>
-                            </div>
-                        </div>
-                    </div>
-                    <!--end col-->
-                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
-                        <div class="team text-center">
-                            <div class="position-relative">
-                                <img src="images/client/ravi.png"
-                                    class="img-fluid avatar avatar-ex-large rounded-pill shadow" alt="" />
-                                <ul class="list-unstyled social-icon team-icon mb-0 mt-4">
-                                    <li class="list-inline-item">
-                                        <a target="_blank" href="https://www.linkedin.com/in/ravi-ahlawat-a9b7b8147/"
-                                            class="rounded"><i class="mdi mdi-linkedin" title="linkedin"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="content pt-3 pb-3">
-                                <h5 class="mb-0">
-                                    <a target="_blank" href="https://www.linkedin.com/in/ravi-ahlawat-a9b7b8147/"
-                                        class="name text-dark">Ravi Ahlawat</a>
-                                </h5>
-                                <small class="designation text-muted">Business Development</small>
-                            </div>
-                        </div>
-                    </div>
-                    <!--end col-->
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="team text-center">
+            <div class="position-relative">
+              <img src="images/client/rupesh.png" class="img-fluid avatar avatar-ex-large rounded-pill shadow" alt="" />
+              <ul class="list-unstyled social-icon team-icon mb-0 mt-4">
+                <li class="list-inline-item">
+                  <a target="_blank" href="https://www.linkedin.com/in/rupesh-pandey-424b8754/" class="rounded"><i
+                      class="mdi mdi-linkedin" title="linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="content pt-3 pb-3">
+              <h5 class="mb-0">
+                <a target="_blank" href="https://www.linkedin.com/in/rupesh-pandey-424b8754/"
+                  class="name text-dark">Rupesh Pandey</a>
+              </h5>
+              <small class="designation text-muted">CTO</small>
+            </div>
+          </div>
+        </div>
+        <!--end col-->
 
-                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
-                        <div class="team text-center">
-                            <div class="position-relative">
-                                <img src="images/client/rohan.jpg?v1"
-                                    class="img-fluid avatar avatar-ex-large rounded-pill shadow" alt="" />
-                                <ul class="list-unstyled social-icon team-icon mb-0 mt-4">
-                                    <li class="list-inline-item">
-                                        <a target="_blank" href="https://www.linkedin.com/in/rohan-mital-7a05b8145/"
-                                            class="rounded"><i class="mdi mdi-linkedin" title="linkedin"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="content pt-3 pb-3">
-                                <h5 class="mb-0">
-                                    <a target="_blank" href="https://www.linkedin.com/in/rohan-mital-7a05b8145/"
-                                        class="name text-dark">Rohan Mital</a>
-                                </h5>
-                                <small class="designation text-muted">CEO</small>
-                            </div>
-                        </div>
-                    </div>
-                    <!--end col-->
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="team text-center">
+            <div class="position-relative">
+              <img src="images/client/sanchit.jpeg" class="img-fluid avatar avatar-ex-large rounded-pill shadow"
+                alt="" />
+              <ul class="list-unstyled social-icon team-icon mb-0 mt-4">
+                <li class="list-inline-item">
+                  <a target="_blank" href="https://www.linkedin.com/in/sanchit-gulabani/" class="rounded"><i
+                      class="mdi mdi-linkedin" title="linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="content pt-3 pb-3">
+              <h5 class="mb-0">
+                <a target="_blank" href="https://www.linkedin.com/in/sanchit-gulabani/" class="name text-dark">Sanchit
+                  Gulabani</a>
+              </h5>
+              <small class="designation text-muted">Consultant</small>
+            </div>
+          </div>
+        </div>
 
-                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
-                        <div class="team text-center">
-                            <div class="position-relative">
-                                <img src="images/client/rupesh.png"
-                                    class="img-fluid avatar avatar-ex-large rounded-pill shadow" alt="" />
-                                <ul class="list-unstyled social-icon team-icon mb-0 mt-4">
-                                    <li class="list-inline-item">
-                                        <a target="_blank" href="https://www.linkedin.com/in/rupesh-pandey-424b8754/"
-                                            class="rounded"><i class="mdi mdi-linkedin" title="linkedin"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="content pt-3 pb-3">
-                                <h5 class="mb-0">
-                                    <a target="_blank" href="https://www.linkedin.com/in/rupesh-pandey-424b8754/"
-                                        class="name text-dark">Rupesh Pandey</a>
-                                </h5>
-                                <small class="designation text-muted">CTO</small>
-                            </div>
-                        </div>
-                    </div>
-                    <!--end col-->
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="team text-center">
+            <div class="position-relative">
+              <img src="images/client/sanjiv.jpg" class="img-fluid avatar avatar-ex-large rounded-pill shadow" alt="" />
+              <ul class="list-unstyled social-icon team-icon mb-0 mt-4">
+                <li class="list-inline-item">
+                  <a target="_blank" href="https://www.linkedin.com/in/sanjiv-mital-650214/" class="rounded"><i
+                      class="mdi mdi-linkedin" title="Linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="content pt-3 pb-3">
+              <h5 class="mb-0">
+                <a target="_blank" href="https://www.linkedin.com/in/sanjiv-mital-650214/" class="name text-dark">Sanjiv
+                  Mital</a>
+              </h5>
+              <small class="designation text-muted">Advisor</small>
+            </div>
+          </div>
+        </div>
+        <!--end col-->
 
-                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
-                        <div class="team text-center">
-                            <div class="position-relative">
-                                <img src="images/client/sanchit.jpeg"
-                                    class="img-fluid avatar avatar-ex-large rounded-pill shadow" alt="" />
-                                <ul class="list-unstyled social-icon team-icon mb-0 mt-4">
-                                    <li class="list-inline-item">
-                                        <a target="_blank" href="https://www.linkedin.com/in/sanchit-gulabani/"
-                                            class="rounded"><i class="mdi mdi-linkedin" title="linkedin"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="content pt-3 pb-3">
-                                <h5 class="mb-0">
-                                    <a target="_blank" href="https://www.linkedin.com/in/sanchit-gulabani/"
-                                        class="name text-dark">Sanchit Gulabani</a>
-                                </h5>
-                                <small class="designation text-muted">Consultant</small>
-                            </div>
-                        </div>
-                    </div>
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="team text-center">
+            <div class="position-relative">
+              <img src="images/client/shivam.jpeg" class="img-fluid avatar avatar-ex-large rounded-pill shadow"
+                alt="" />
+              <ul class="list-unstyled social-icon team-icon mb-0 mt-4">
+                <li class="list-inline-item">
+                  <a target="_blank" href="https://www.linkedin.com/in/imshivamgupta1/" class="rounded"><i
+                      class="mdi mdi-linkedin" title="Linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="content pt-3 pb-3">
+              <h5 class="mb-0">
+                <a target="_blank" href="https://www.linkedin.com/in/imshivamgupta1/" class="name text-dark">Shivam
+                  Gupta</a>
+              </h5>
+              <small class="designation text-muted">Lead Developer</small>
+            </div>
+          </div>
+        </div>
 
-                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
-                        <div class="team text-center">
-                            <div class="position-relative">
-                                <img src="images/client/sanjiv.jpg"
-                                    class="img-fluid avatar avatar-ex-large rounded-pill shadow" alt="" />
-                                <ul class="list-unstyled social-icon team-icon mb-0 mt-4">
-                                    <li class="list-inline-item">
-                                        <a target="_blank" href="https://www.linkedin.com/in/sanjiv-mital-650214/"
-                                            class="rounded"><i class="mdi mdi-linkedin" title="Linkedin"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="content pt-3 pb-3">
-                                <h5 class="mb-0">
-                                    <a target="_blank" href="https://www.linkedin.com/in/sanjiv-mital-650214/"
-                                        class="name text-dark">Sanjiv
-                                        Mital</a>
-                                </h5>
-                                <small class="designation text-muted">Advisor</small>
-                            </div>
-                        </div>
-                    </div>
-                    <!--end col-->
-
-                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
-                        <div class="team text-center">
-                            <div class="position-relative">
-                                <img src="images/client/shivam.jpeg"
-                                    class="img-fluid avatar avatar-ex-large rounded-pill shadow" alt="" />
-                                <ul class="list-unstyled social-icon team-icon mb-0 mt-4">
-                                    <li class="list-inline-item">
-                                        <a target="_blank" href="https://www.linkedin.com/in/imshivamgupta1/"
-                                            class="rounded"><i class="mdi mdi-linkedin" title="Linkedin"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="content pt-3 pb-3">
-                                <h5 class="mb-0">
-                                    <a target="_blank" href="https://www.linkedin.com/in/imshivamgupta1/"
-                                        class="name text-dark">Shivam
-                                        Gupta</a>
-                                </h5>
-                                <small class="designation text-muted">Lead Developer</small>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--end col-->
-                    <!-- <div class="col-lg-3 col-md-6 mt-4 pt-2">
+        <!--end col-->
+        <!-- <div class="col-lg-3 col-md-6 mt-4 pt-2">
                     <div class="team text-center">
                         <div class="position-relative">
                             <img src="images/client/shivangee.png"
@@ -522,8 +506,8 @@
                         </div>
                     </div>
                 </div> -->
-                    <!--end col-->
-                    <!-- <div class="col-lg-3 col-md-6 mt-4 pt-2">
+        <!--end col-->
+        <!-- <div class="col-lg-3 col-md-6 mt-4 pt-2">
                     <div class="team text-center">
                         <div class="position-relative">
                             <img src="images/client/swati.jpeg"
@@ -544,9 +528,9 @@
                         </div>
                     </div>
                 </div> -->
-                    <!--end col-->
+        <!--end col-->
 
-                    <!-- <div class="col-lg-3 col-md-6 mt-4 pt-2">
+        <!-- <div class="col-lg-3 col-md-6 mt-4 pt-2">
                     <div class="team text-center">
                         <div class="position-relative">
                             <img src="images/client/vaibhav.jpg"
@@ -568,40 +552,38 @@
                         </div>
                     </div>
                 </div> -->
-                    <!--end col-->
+        <!--end col-->
 
-                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
-                        <div class="team text-center">
-                            <div class="position-relative">
-                                <img src="images/client/vivek.jpg"
-                                    class="img-fluid avatar avatar-ex-large rounded-pill shadow" alt="" />
-                                <ul class="list-unstyled social-icon team-icon mb-0 mt-4">
-                                    <li class="list-inline-item">
-                                        <a target="_blank" href="https://www.linkedin.com/in/viveksagar/"
-                                            class="rounded"><i class="mdi mdi-linkedin" title="linkedin"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="content pt-3 pb-3">
-                                <h5 class="mb-0">
-                                    <a target="_blank" href="https://www.linkedin.com/in/viveksagar/"
-                                        class="name text-dark">Vivek Sagar</a>
-                                </h5>
-                                <small class="designation text-muted">Advisor</small>
-                            </div>
-                        </div>
-                    </div>
-                    <!--end col-->
-                </div>
-                <!--end row-->
+        <div class="col-lg-3 col-md-6 mt-4 pt-2">
+          <div class="team text-center">
+            <div class="position-relative">
+              <img src="images/client/vivek.jpg" class="img-fluid avatar avatar-ex-large rounded-pill shadow" alt="" />
+              <ul class="list-unstyled social-icon team-icon mb-0 mt-4">
+                <li class="list-inline-item">
+                  <a target="_blank" href="https://www.linkedin.com/in/viveksagar/" class="rounded"><i
+                      class="mdi mdi-linkedin" title="linkedin"></i></a>
+                </li>
+              </ul>
             </div>
-            <!--end container-->
-        </section>
-        <!--end section-->
-        <!-- Team Start -->
+            <div class="content pt-3 pb-3">
+              <h5 class="mb-0">
+                <a target="_blank" href="https://www.linkedin.com/in/viveksagar/" class="name text-dark">Vivek Sagar</a>
+              </h5>
+              <small class="designation text-muted">Advisor</small>
+            </div>
+          </div>
+        </div>
+        <!--end col-->
+      </div>
+      <!--end row-->
+    </div>
+    <!--end container-->
+  </section>
+  <!--end section-->
+  <!-- Team Start -->
 
-        <!-- Client Start -->
-        <!-- <section class="section" style="background: url('images/hotel/bg05.jpg') center center;display: none;">
+  <!-- Client Start -->
+  <!-- <section class="section" style="background: url('images/hotel/bg05.jpg') center center;display: none;">
         <div class="bg-overlay"></div>
         <div class="container">
             <div class="row justify-content-center">
@@ -712,200 +694,252 @@
             </div>
         </div>
     </section> -->
-        <!-- Client End -->
+  <!-- Client End -->
 
-        <!-- Contact Start -->
-        <section class="section">
-            <div class="container" id="book-a-demo">
+  <!-- Contact Start -->
+  <section class="section">
+    <div class="container" id="book-a-demo">
+      <div class="row">
+        <div class="col-lg-8 col-md-6 p-0 pl-md-3 pr-md-3">
+          <div class="map map-height-two rounded map-gray">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618109.378794686!2d77.49465516866069!3d27.67681394776205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce59ee707d6a7%3A0xd368f7b59292cc40!2sKUBMA!5e0!3m2!1sen!2sin!4v1598936818095!5m2!1sen!2sin"
+              width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+              tabindex="0"></iframe>
+          </div>
+          <!--end col-->
+        </div>
+        <div class="col-lg-4 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+          <div class="pt-5 pb-5 p-4 bg-white rounded shadow">
+            <h4>Book a demo</h4>
+            <div class="custom-form mt-4">
+              <div id="message"></div>
+              <form method="post" action="" name="contact-form" id="contact-form">
                 <div class="row">
-                    <div class="col-lg-8 col-md-6 p-0 pl-md-3 pr-md-3">
-                        <div class="map map-height-two rounded map-gray">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618109.378794686!2d77.49465516866069!3d27.67681394776205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce59ee707d6a7%3A0xd368f7b59292cc40!2sKUBMA!5e0!3m2!1sen!2sin!4v1598936818095!5m2!1sen!2sin"
-                                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
-                                aria-hidden="false" tabindex="0"></iframe>
-                        </div>
-                        <!--end col-->
+                  <div class="col-md-12">
+                    <div class="form-group position-relative">
+                      <label>Your Name <span class="text-danger">*</span></label>
+                      <i class="mdi mdi-account ml-3 icons"></i>
+                      <input name="name" id="name" type="text" class="form-control pl-5" placeholder="Your Name :"
+                        required="">
                     </div>
-                    <div class="col-lg-4 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                        <div class="pt-5 pb-5 p-4 bg-white rounded shadow">
-                            <h4>Book a demo</h4>
-                            <div class="custom-form mt-4">
-                                <div id="message"></div>
-                                <form method="post" action="" name="contact-form" id="contact-form">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="form-group position-relative">
-                                                <label>Your Name <span class="text-danger">*</span></label>
-                                                <i class="mdi mdi-account ml-3 icons"></i>
-                                                <input name="name" id="name" type="text" class="form-control pl-5"
-                                                    placeholder="Your Name :" required="">
-                                            </div>
-                                        </div>
-                                        <!--end col-->
-                                        <div class="col-md-12">
-                                            <div class="form-group position-relative">
-                                                <label>Your Email <span class="text-danger">*</span></label>
-                                                <i class="mdi mdi-email ml-3 icons"></i>
-                                                <input name="email" id="email" type="email" class="form-control pl-5"
-                                                    placeholder="Your email :" required="">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="form-group position-relative">
-                                                <label>Your Mobile No. <span class="text-danger">*</span></label>
-                                                <i class="mdi mdi-phone ml-3 icons"></i>
-                                                <input name="mobile" id="mobile" type="number" class="form-control pl-5"
-                                                    placeholder="Your mobile number :" required="">
-                                            </div>
-                                        </div>
-                                        <!--end col-->
-                                    </div>
-                                    <!--end row-->
-                                    <div class="row">
-                                        <div class="col-sm-12 text-center">
-                                            <button type="submit" id="submit" name="send"
-                                                class="submitBnt btn btn-primary btn-block">
-                                                <svg id="loader" style="display:none;"
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    xmlns:xlink="http://www.w3.org/1999/xlink" class="msg-sent"
-                                                    width="25px" height="25px" viewBox="0 0 100 100"
-                                                    preserveAspectRatio="xMidYMid">
-                                                    <circle cx="50" cy="50" fill="none" stroke="#ffffff"
-                                                        stroke-width="6" r="41"
-                                                        stroke-dasharray="193.20794819577225 66.40264939859075"
-                                                        transform="rotate(332.61 50 50)">
-                                                        <animateTransform attributeName="transform" type="rotate"
-                                                            repeatCount="indefinite" dur="1s" values="0 50 50;360 50 50"
-                                                            keyTimes="0;1"></animateTransform>
-                                                    </circle>
-                                                </svg>
-                                                <span id="label">Request a demo</span>
-                                            </button>
-                                            <!-- .msg-sent hide after success -->
-                                            <div id="simple-msg" class="p-2" style="display: none;">
-                                                We will contact you shortly.
-                                            </div>
-                                        </div>
-                                        <!--end col-->
-                                    </div>
-                                    <!--end row-->
-                                </form>
-                                <!--end form-->
-                            </div>
-                        </div>
-                        <!--end custom-form-->
+                  </div>
+                  <!--end col-->
+                  <div class="col-md-12">
+                    <div class="form-group position-relative">
+                      <label>Your Email <span class="text-danger">*</span></label>
+                      <i class="mdi mdi-email ml-3 icons"></i>
+                      <input name="email" id="email" type="email" class="form-control pl-5" placeholder="Your email :"
+                        required="">
                     </div>
-                    <!--end col-->
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group position-relative">
+                      <label>Your Mobile No. <span class="text-danger">*</span></label>
+                      <i class="mdi mdi-phone ml-3 icons"></i>
+                      <input name="mobile" id="mobile" type="number" class="form-control pl-5"
+                        placeholder="Your mobile number :" required="">
+                    </div>
+                  </div>
+                  <!--end col-->
                 </div>
                 <!--end row-->
-            </div>
-            <!--end container-->
-            <!-- Contact End -->
-        </section>
-        <!--end section-->
-        <!-- News End -->
-
-        <footer class="footer">
-            <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
-                        <a class="logo-footer" href="#">KUBMA<span class="text-primary">.</span></a>
-                        <p class="mt-4">
-                            We enable businesses to give live, detailed online walk-throughs of their spaces to
-                            customers.
-                        </p>
-                        <ul class="list-unstyled social-icon social mb-0 mt-4">
-                            <li class="list-inline-item">
-                                <a href="https://www.linkedin.com/company/kubma/about/" target="_blank"
-                                    class="rounded"><i class="mdi mdi-linkedin" title="Linkedin"></i></a>
-                            </li>
-                        </ul>
-                        <!--end icon-->
+                  <div class="col-sm-12 text-center">
+                    <button type="submit" id="submit" name="send" class="submitBnt btn btn-primary btn-block">
+                      <svg id="loader" style="display:none;" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" class="msg-sent" width="25px" height="25px"
+                        viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+                        <circle cx="50" cy="50" fill="none" stroke="#ffffff" stroke-width="6" r="41"
+                          stroke-dasharray="193.20794819577225 66.40264939859075" transform="rotate(332.61 50 50)">
+                          <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="1s"
+                            values="0 50 50;360 50 50" keyTimes="0;1"></animateTransform>
+                        </circle>
+                      </svg>
+                      <span id="label">Request a demo</span>
+                    </button>
+                    <!-- .msg-sent hide after success -->
+                    <div id="simple-msg" class="p-2" style="display: none;">
+                      We will contact you shortly.
                     </div>
-                    <!--end col-->
-                    <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                        <h4 class="text-light footer-head">Useful Links</h4>
-                        <ul class="list-unstyled footer-list mt-4">
-                            <li class="d-none"><a href="page-terms.html" class="text-foot"><i
-                                        class="mdi mdi-chevron-right mr-1"></i> Terms
-                                    of
-                                    Services</a></li>
-                            <li><a href="page-privacy.html" class="text-foot"><i class="mdi mdi-chevron-right mr-1"></i>
-                                    Privacy
-                                    Policy</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0 mx-lg-auto" style="display: none;">
-                        <h4 class="text-light footer-head">Newsletter</h4>
-                        <p class="mt-4">Sign up and receive the latest tips via email.</p>
-                        <form>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="foot-subscribe form-group position-relative">
-                                        <label>Write your email
-                                            <span class="text-danger">*</span></label>
-                                        <i class="mdi mdi-email ml-3 icons"></i>
-                                        <input type="email" name="email" id="emailsubscribe"
-                                            class="form-control pl-5 rounded" placeholder="Your email : " required="">
-                                    </div>
-                                </div>
-
-                            </div>
-                        </form>
-                        <!--end col-->
-
-                        <!--end col-->
-                    </div>
-                    <!--end container-->
-                    <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                        <h4 class="text-light footer-head">Book a demo</h4>
-                        <p class="mt-4">Contact Us</p>
-                        <form>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="foot-subscribe form-group position-relative">
-                                        <i class="mdi mdi-bell"> </i>
-                                        <a href="mailto:contact@kubma.com" target="_top">contact@kubma.com</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <footer class="footer footer-bar">
-            <div class="container text-center">
-                <div class="row align-items-center">
-                    <div class="col-sm-6">
-                        <div class="text-sm-left">
-                            <p class="mb-0">Copyright © 2020 All Rights Reserved.</p>
-                        </div>
-                    </div>
-                    <!--end col-->
+                  </div>
+                  <!--end col-->
                 </div>
                 <!--end row-->
+              </form>
+              <!--end form-->
             </div>
-            <!--end container-->
-        </footer>
-        <!-- Back to top -->
-        <a href="#" class="back-to-top rounded text-center" id="back-to-top">
-            <i class="mdi mdi-chevron-up d-block"></i>
-        </a>
-        <!-- Back to top -->
+          </div>
+          <!--end custom-form-->
+        </div>
+        <!--end col-->
+      </div>
+      <!--end row-->
+    </div>
+    <!--end container-->
+    <!-- Contact End -->
+  </section>
+  <!--end section-->
+  <!-- News End -->
 
-        <!-- javascript -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/jquery.magnific-popup.min.js"></script>
-        <!-- SLIDER -->
-        <script src="js/owl.carousel.min.js"></script>
-        <script src="js/particles.js"></script>
-        <!-- Main Js -->
-        <script src="js/app.js"></script>
-        <script src="js/custom.js?v1"></script>
-        <script type="module" src="js/three.js"></script>
-    </body>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+          <a class="logo-footer" href="#">KUBMA<span class="text-primary">.</span></a>
+          <p class="mt-4">
+            We enable businesses to give live, detailed online walk-throughs of their spaces to customers.
+          </p>
+          <ul class="list-unstyled social-icon social mb-0 mt-4">
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/company/kubma/about/" target="_blank" class="rounded"><i
+                  class="mdi mdi-linkedin" title="Linkedin"></i></a>
+            </li>
+          </ul>
+          <!--end icon-->
+        </div>
+        <!--end col-->
+        <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+          <h4 class="text-light footer-head">Useful Links</h4>
+          <ul class="list-unstyled footer-list mt-4">
+            <li class="d-none"><a href="page-terms.html" class="text-foot"><i class="mdi mdi-chevron-right mr-1"></i>
+                Terms
+                of
+                Services</a></li>
+            <li><a href="page-privacy.html" class="text-foot"><i class="mdi mdi-chevron-right mr-1"></i>
+                Privacy
+                Policy</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0 mx-lg-auto" style="display: none;">
+          <h4 class="text-light footer-head">Newsletter</h4>
+          <p class="mt-4">Sign up and receive the latest tips via email.</p>
+          <form>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="foot-subscribe form-group position-relative">
+                  <label>Write your email
+                    <span class="text-danger">*</span></label>
+                  <i class="mdi mdi-email ml-3 icons"></i>
+                  <input type="email" name="email" id="emailsubscribe" class="form-control pl-5 rounded"
+                    placeholder="Your email : " required="">
+                </div>
+              </div>
+
+            </div>
+          </form>
+          <!--end col-->
+
+          <!--end col-->
+        </div>
+        <!--end container-->
+        <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+          <h4 class="text-light footer-head">Book a demo</h4>
+          <p class="mt-4">Contact Us</p>
+          <form>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="foot-subscribe form-group position-relative">
+                  <i class="mdi mdi-bell"> </i>
+                  <a href="mailto:contact@kubma.com" target="_top">contact@kubma.com</a>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <footer class="footer footer-bar">
+    <div class="container text-center">
+      <div class="row align-items-center">
+        <div class="col-sm-6">
+          <div class="text-sm-left">
+            <p class="mb-0">Copyright © 2020 All Rights Reserved.</p>
+          </div>
+        </div>
+        <!--end col-->
+      </div>
+      <!--end row-->
+    </div>
+    <!--end container-->
+  </footer>
+
+  <!-- Back to top -->
+  <a href="#" class="back-to-top rounded text-center" id="back-to-top">
+    <i class="mdi mdi-chevron-up d-block"></i>
+  </a>
+  <!-- Back to top -->
+
+  <!-- javascript -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <!-- SLIDER -->
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/particles.js"></script>
+  <!-- Main Js -->
+  <script src="js/app.js"></script>
+  <script src="js/custom.js?v1"></script>
+  <script type="module" src="js/three.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <script>
+    var canvas = document.getElementById("scene");
+    var ctx = canvas.getContext("2d");
+    var particles = [];
+    function drawScene() {
+      particles = [];
+      canvas.width = png.width * 3-150;
+      canvas.height = png.height * 3;
+
+      ctx.drawImage(png, 0, 0);
+
+      var data = ctx.getImageData(0, 0, png.width, png.height);
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      ctx.fillStyle = "white";
+
+      for (var y = 0, y2 = data.height; y < y2; y++) {
+        for (var x = 0, x2 = data.width; x < x2; x++) {
+          if (data.data[(y * 4 * data.width) + (x * 4) + 3] > 128) {
+            var particle = {
+              x0: x,
+              y0: y,
+              x1: png.width / 2,
+              y1: png.height / 2,
+              speed: Math.random() * 4 + 2
+            };
+            gsap.to(particle, {
+              duration: particle.speed,
+              x1: particle.x0,
+              y1: particle.y0,
+              delay: y / 30,
+              ease: Elastic.easeOut
+            });
+            particles.push(particle);
+          }
+        }
+      }
+
+      requestAnimationFrame(render);
+    }
+    var render = function () {
+      requestAnimationFrame(render);
+
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      for (var i = 0, j = particles.length; i < j; i++) {
+        var particle = particles[i];
+        ctx.fillRect(particle.x1 * 2.5, particle.y1 * 2.5, 1.8,1.8);
+      }
+    };
+
+    var png = new Image();
+    png.onload = () => {
+      drawScene();
+      window.addEventListener('click', drawScene);
+    };
+    png.src = "data:image/png;base64,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";
+  </script>
+</body>
 
 </html>
