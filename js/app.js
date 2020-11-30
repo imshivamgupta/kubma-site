@@ -115,7 +115,7 @@
 			})
 		} else {
 			$('li.bg-slider').css({
-				height: `${window.innerHeight - 100}px`
+				height: `${window.innerHeight}px`
 			})
 		}
 	}
