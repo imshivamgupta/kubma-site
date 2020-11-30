@@ -106,12 +106,12 @@
 	// 	items: 1
 	// })
 
-	// function HeroSection() {
-	// 	$('li.bg-slider').css({
-	// 		height: `${document.documentElement.clientHeight}px`
-	// 	})
-	// }
-	// HeroSection()
+	function HeroSection() {
+		$('li.bg-slider').css({
+			height: `${document.documentElement.clientHeight}px`
+		})
+	}
+	HeroSection()
 	// $(window).resize(() => {
 	// 	HeroSection()
 	// })
