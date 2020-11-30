@@ -123,17 +123,10 @@ function init() {
 
 function onWindowResize() {
 	// Portrait 0
-	if (!window.screen.orientation.angle) {
-		camera.aspect = portrait.width / portrait.height
-		camera.updateProjectionMatrix()
+	camera.aspect = window.innerWidth / window.innerHeight
+	camera.updateProjectionMatrix()
 
-		renderer.setSize(portrait.width, portrait.height)
-	} else {
-		camera.aspect = landscape.width / landscape.height
-		camera.updateProjectionMatrix()
-
-		renderer.setSize(landscape.width, landscape.height)
-	}
+	renderer.setSize(window.innerWidth, window.innerHeight)
 }
 
 function onPointerDown(event) {
