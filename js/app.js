@@ -111,11 +111,11 @@
 		// Landscape Primary 90
 		if (!window.screen.orientation.angle) {
 			$('li.bg-slider').css({
-				height: `${window.innerHeight - 80}px`
+				height: `${window.innerHeight}px`
 			})
 		} else {
 			$('li.bg-slider').css({
-				height: `${window.innerHeight - 80}px`
+				height: `${window.innerHeight - 100}px`
 			})
 		}
 	}
