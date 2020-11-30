@@ -107,14 +107,24 @@
 	// })
 
 	function HeroSection() {
-		$('li.bg-slider').css({
-			height: `${document.documentElement.clientHeight}px`
-		})
+		// Portraint Primary 0
+		// Landscape Primary 90
+		if (!window.screen.orientation.angle) {
+			$('li.bg-slider').css({
+				height: `${portrait.height}px`
+			})
+			console.log(portrait.height)
+		} else {
+			$('li.bg-slider').css({
+				height: `${landscape.height}px`
+			})
+			console.log(landscape.height)
+		}
 	}
 	HeroSection()
-	// $(window).resize(() => {
-	// 	HeroSection()
-	// })
+	$(window).resize(() => {
+		HeroSection()
+	})
 })(jQuery)
 
 // For sorting team section

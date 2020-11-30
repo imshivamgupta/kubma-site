@@ -122,10 +122,18 @@ function init() {
 }
 
 function onWindowResize() {
-	camera.aspect = window.innerWidth / window.innerHeight
-	camera.updateProjectionMatrix()
+	// Portrait 0
+	if (!window.screen.orientation.angle) {
+		camera.aspect = portrait.width / portrait.height
+		camera.updateProjectionMatrix()
 
-	renderer.setSize(window.innerWidth, window.innerHeight)
+		renderer.setSize(portrait.width, portrait.height)
+	} else {
+		camera.aspect = landscape.width / landscape.height
+		camera.updateProjectionMatrix()
+
+		renderer.setSize(landscape.width, landscape.height)
+	}
 }
 
 function onPointerDown(event) {
